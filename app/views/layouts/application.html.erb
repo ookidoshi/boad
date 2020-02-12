@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Boad</title>
+    <title>Techpitgram4</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
+
+    <%# ==========ここから追加する========== %>
+    <%= render 'partial/navbar' %>
+    <%# ==========ここまで追加する========== %>
+
     <%= yield %>
   </body>
 </html>
