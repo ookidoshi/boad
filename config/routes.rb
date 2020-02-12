@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users, # ここの行にカンマを追加
-    controllers: { registrations: 'registrations' } # ここの行を追加
+  devise_for :users,
+    controllers: { registrations: 'registrations' }
 
   root 'posts#index'
 
   get '/users/:id', to: 'users#show', as: 'user'
 
-  resources :posts, only: %i(new create index) do
+  
+  resources :posts, only: %i(index new create show destroy) do
     resources :photos, only: %i(create)
+
   end
 end
