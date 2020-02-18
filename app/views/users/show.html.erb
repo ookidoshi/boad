@@ -16,6 +16,12 @@
         <%# ===この行を追加する=== %>
         <% end %>
 
+        <% @photos.each do |photo| %>
+          <div class=“show-image”>
+            <%= image_tag "#{photo.image}", class: "round-img" %>
+          </div>
+        <% end %>
+
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
