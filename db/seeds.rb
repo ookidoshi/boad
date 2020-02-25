@@ -9,7 +9,7 @@
 
 
 user = User.create!(
-  email:     "sample@gmail.com",
-  name:      "test",
-  password:  "test567",
+  email:     "sample1@gmail.com",
+  name:      "test1",
+  password:  "test5678",
 )
