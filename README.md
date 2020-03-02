@@ -28,6 +28,7 @@
 ### 投稿挙動
 ![動画](https://i.gyazo.com/4bdf470eab0cdd26c3947ba23ccc3654.mp4" CTY")
 
+### いいねコメント挙動
 ![動画](https://i.gyazo.com/f275390841e76311164bbc4fcf525ff5.mp4" CTY")
 
 ## 工夫したポイント
