@@ -25,7 +25,7 @@
 ![画像](https://i.gyazo.com/e2e3f96850d7376b00bd614cfdb63f3b.png " CTY")
  ### いいね、コメント入力
 ![画像](https://i.gyazo.com/6ea0efe9be6383a9ca1f29de27ca468e.png " CTY")
-### いいねコメント挙動
+### 投稿挙動
 ![動画](https://i.gyazo.com/1a721088339649dd4d91a73021ed567e.mp4 " CTY")
 
 ## 工夫したポイント
