@@ -28,7 +28,7 @@
 ### 投稿挙動
 ![動画](https://i.gyazo.com/4bdf470eab0cdd26c3947ba23ccc3654.mp4" CTY")
 
-![動画](https://i.gyazo.com/84229e6294317c5753e48789b2804999.mp4" CTY")
+![動画](https://i.gyazo.com/f275390841e76311164bbc4fcf525ff5.mp4" CTY")
 
 ## 工夫したポイント
 
@@ -43,4 +43,70 @@ ruby 2.5.1
 - ユーザー間のダイレクトメール機能
 -  わるいね機能
 
-★DB設計
+### DB設計
+
+# CTY DB設計
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|comment|text|null: false|
+|post_id|integer|null: false|
+|user_id|integer|null: false|
+|created_at|datetime|null: false|
+|updated_at|datetime|null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :post
+
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|post_id|integer|null: false|
+|user_id|integer|null: false|
+|created_at|datetime|null: false|
+|updated_at|datetame|null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :post
+
+## photosテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|string|null: false|
+|post_id|integer|null: false|
+|created_at|datetime|null: false|
+|updated_at|datetame|null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :post
+
+
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|caption|string||
+|user_id|integer|null: false|
+|created_at|datetime|null: false|
+|updated_at|datetame|null: false|
+
+### Association
+- belongs_to :user
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|integer|null: false,unique:true|
+|encrypted_password|string|null: false|
+|created_at|datetime|null: false|
+|updated_at|datetame|null: false|
+|name|string|null: false|
+|profile_photo|string||
+
+### Association
+- has_many  :posts
+- has_many  :comments
+- has_many  :likes
+
