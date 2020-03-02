@@ -28,6 +28,8 @@
 ### 投稿挙動
 ![動画](https://i.gyazo.com/4bdf470eab0cdd26c3947ba23ccc3654.mp4" CTY")
 
+![動画](https://i.gyazo.com/84229e6294317c5753e48789b2804999.mp4" CTY")
+
 ## 工夫したポイント
 
 シンプルなものにしようと考えました。
