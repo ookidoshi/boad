@@ -21,10 +21,11 @@
 知識共有に特化したSNSを作ってみたかったので制作しました。
 
 ## DEMO
+### 投稿一覧画面
 ![画像](https://i.gyazo.com/e2e3f96850d7376b00bd614cfdb63f3b.png " CTY")
-
+ ### いいね、コメント入力
 ![画像](https://i.gyazo.com/6ea0efe9be6383a9ca1f29de27ca468e.png " CTY")
-
+### 投稿挙動
 ![動画](https://i.gyazo.com/4bdf470eab0cdd26c3947ba23ccc3654.mp4" CTY")
 
 ## 工夫したポイント
