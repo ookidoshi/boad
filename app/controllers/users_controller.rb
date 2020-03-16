@@ -6,5 +6,4 @@ class UsersController < ApplicationController
     # @photos = Photo.includes(:images).order("created_at DESC").limit(10)
     @photos = Photo.order("created_at DESC").limit(4)
   end
-
 end
