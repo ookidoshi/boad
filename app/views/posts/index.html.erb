@@ -47,7 +47,6 @@
             <span><%= post.caption %></span>
             <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
             
-           
             <div id="comment-post-<%= post.id.to_s %>">
               <%= render 'comment_list', { post: post } %>
             </div>
@@ -60,12 +59,12 @@
                 <%= f.hidden_field :post_id, value: post.id %>
                 <%= f.text_field :comment, class: "form-control comment-input border-0", placeholder: "コメント ...", autocomplete: :off %>
               <% end %>
-            </div>
-            
+            </div>      
           </div>
         </div>
-      </div>
-      <%= paginate(@posts) %> 
-    </div>
-  </div>
+      </div>      
+    </div> 
+  </div> 
 <% end %>
+<%= paginate(@posts) %>
+
