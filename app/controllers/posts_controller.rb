@@ -25,7 +25,9 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.limit(10).includes(:photos, :user).order('created_at DESC')
+    # @posts = Post.limit(10).includes(:photos, :user).order('created_at DESC')
+
+    @posts = Post.includes(:photos, :user).order("created_at DESC").page(params[:page]).per(5)
   end
 
   def show
